@@ -1,0 +1,101 @@
+  /* Estilos gerais para o formulário */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+@media screen and (max-with:768px) {
+  #contato {
+    display: block;
+    justify-content: right;
+    height: 100vh;
+  }
+}
+#contato {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+h2 {
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  height: auto; /* Remova a altura fixa para que os campos possam se expandir */
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #b3d211;
+  width: 100%;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Media query para dispositivos com largura menor que 768px (tamanho típico de tela móvel) */
+@media screen and (min-width: 768px) {
+  #mobile{
+    display:none;
+  }
+}
+@media screen and (max-width: 768px) {
+#desktop{
+  display: none;
+}
+#mobile{
+  display: block;
+}
+  .form-container {
+    padding: 10px; /* Reduza o espaçamento interno */
+    margin:10px;
+    max-width: none; /* Remova a largura máxima para que o formulário ocupe toda a largura da tela */
+  }
+
+  .form-group {
+    margin-bottom: 10px; /* Reduza o espaçamento entre os campos */
+  }
+
+}
